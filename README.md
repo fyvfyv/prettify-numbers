@@ -13,21 +13,21 @@ npm install prettify-numbers --save
 
 ```js
 var prettifyNum = require('prettify-numbers');
-var prettyNum = prettifyNum(100000.0, ' ');
+var prettyNum = prettifyNum.default()(100000.1, ' ');
 ```
 
 ```sh
-Output should be '100 000,0'
+Output should be '100 000,1'
 ```
 
 ### TypeScript
 ```typescript
 import prettyNum from 'prettify-numbers';
-console.log(prettyNum(100000.0, ' '))
+console.log(prettyNum(100000.1, ' '))
 ```
 
 ```sh
-Output should be '100 000,0'
+Output should be '100 000,1'
 ```
 
 ## License
