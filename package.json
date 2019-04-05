@@ -1,7 +1,7 @@
 {
   "name": "prettify-numbers",
   "version": "1.0.2",
-  "description": "Add thousands separator to numbers",
+  "description": "Add thousands and decimal separator to numbers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

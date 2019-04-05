@@ -5,17 +5,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
  *
  * @example
  * // returns "100 000,12"
- * getNumWithSpaces('100000,12', ' ')
+ * getNumWithSpaces('100000,12', ' ', ',')
  *
  * @param {number|string} num
- * @param {string} separator — Thousands separator symbol
+ * @param {string} thousandsSep — Thousands separator symbol
+ * @param {string} decimalsSep - Decimals separator symbol
  * @returns {string} Return formatted string with number
  */
-function getNumWithSpaces(num, separator) {
-    if (separator === void 0) { separator = ' '; }
+function getNumWithSpaces(num, thousandsSep, decimalsSep) {
+    if (thousandsSep === void 0) { thousandsSep = ' '; }
+    if (decimalsSep === void 0) { decimalsSep = ','; }
     var parts = num.toString().split(/[,.]/);
     // Add spaces between every 3 digit
-    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, separator);
-    return parts.join(',');
+    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousandsSep);
+    return parts.join(decimalsSep);
 }
 exports.default = getNumWithSpaces;
