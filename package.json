@@ -1,0 +1,24 @@
+{
+  "name": "prettify-numbers",
+  "version": "1.0.0",
+  "description": "Add thousands separator to numbers",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyvfyv/prettify-numbers.git"
+  },
+  "author": "Oleg Petrov <fyvfyv@fyvfyv.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fyvfyv/prettify-numbers/issues"
+  },
+  "homepage": "https://github.com/fyvfyv/prettify-numbers#readme",
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  }
+}
