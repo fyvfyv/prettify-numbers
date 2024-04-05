@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/fyvfyv/prettify-numbers#readme",
   "devDependencies": {
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.4"
   }
 }
